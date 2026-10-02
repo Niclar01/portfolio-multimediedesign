@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your work with a beautifully implemented personal portfolio website that faithfully reflects your unique design vision and content.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

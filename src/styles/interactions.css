@@ -1,0 +1,108 @@
+@media (width >= 1024px) and (hover: hover) and (pointer: fine) {
+  header nav a,
+  [data-page="school"] h2 a {
+    @apply relative;
+  }
+
+  header nav a::after,
+  [data-page="school"] h2 a::after {
+    @apply pointer-events-none absolute inset-x-0 block h-px origin-left scale-x-0 bg-current content-[""] transition-transform duration-250 ease-in-out;
+  }
+
+  header nav a::after {
+    @apply -bottom-px;
+  }
+
+  [data-page="school"] h2 a::after {
+    @apply -bottom-[3px];
+  }
+
+  header nav a:hover::after,
+  [data-page="school"] h2 a:hover::after {
+    @apply scale-x-100;
+  }
+
+  footer nav a {
+    @apply underline decoration-transparent underline-offset-[3px] transition-[text-decoration-color] duration-250 ease-in-out;
+  }
+
+  footer nav a:hover {
+    @apply decoration-current;
+  }
+
+  a[data-name="Regular btn"],
+  a[data-name="Return btn"],
+  a[data-name="Learn More BTN"],
+  [data-page="knitwear"] a[data-node-id="2:183"],
+  [data-page="skills"] a[data-node-id="2:55"] {
+    @apply transition-[transform,background-color] duration-250 ease-in-out;
+  }
+
+  a[data-name="Regular btn"]:hover,
+  a[data-name="Return btn"]:hover,
+  a[data-name="Learn More BTN"]:hover,
+  [data-page="knitwear"] a[data-node-id="2:183"]:hover,
+  [data-page="skills"] a[data-node-id="2:55"]:hover {
+    @apply [transform:translateY(-2px)] bg-[#f7f3ee];
+  }
+
+  [data-name="PINBOARD"] > a {
+    @apply transition-[scale] duration-250 ease-in-out;
+  }
+
+  [data-name="PINBOARD"] > a [class*="shadow-"] {
+    @apply transition-shadow duration-250 ease-in-out;
+  }
+
+  [data-name="PINBOARD"] > a:hover {
+    @apply scale-[1.02];
+  }
+
+  [data-name="PINBOARD"] > a:hover [class*="shadow-"] {
+    @apply shadow-[-2.297px_3.297px_6px_0px_rgba(0,0,0,0.3)];
+  }
+
+  [data-page="school"] a[data-node-id="2:377"],
+  [data-page="school"] a[data-node-id="2:372"] {
+    @apply overflow-hidden;
+  }
+
+  [data-page="school"] a[data-node-id="2:377"] > div,
+  [data-page="school"] a[data-node-id="2:372"] > div {
+    @apply transition-[scale] duration-250 ease-in-out;
+  }
+
+  [data-page="school"] a[data-node-id="2:377"]:hover > div,
+  [data-page="school"] a[data-node-id="2:372"]:hover > div {
+    @apply scale-[1.02];
+  }
+
+  footer a[href="https://www.instagram.com/soeeknitwear/"],
+  footer a[href="https://www.linkedin.com/in/nicoline-larsen-44a7a2234/"] {
+    @apply transition-opacity duration-250 ease-in-out;
+  }
+
+  footer a[href="https://www.instagram.com/soeeknitwear/"]:hover,
+  footer a[href="https://www.linkedin.com/in/nicoline-larsen-44a7a2234/"]:hover {
+    @apply opacity-80;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    header nav a::after,
+    [data-page="school"] h2 a::after,
+    footer nav a,
+    a[data-name="Regular btn"],
+    a[data-name="Return btn"],
+    a[data-name="Learn More BTN"],
+    [data-page="knitwear"] a[data-node-id="2:183"],
+    [data-page="skills"] a[data-node-id="2:55"],
+    [data-name="PINBOARD"] > a,
+    [data-name="PINBOARD"] > a [class*="shadow-"],
+    [data-page="school"] a[data-node-id="2:377"] > div,
+    [data-page="school"] a[data-node-id="2:372"] > div,
+    footer a[href="https://www.instagram.com/soeeknitwear/"],
+    footer a[href="https://www.linkedin.com/in/nicoline-larsen-44a7a2234/"] {
+      @apply transition-none;
+    }
+  }
+}
